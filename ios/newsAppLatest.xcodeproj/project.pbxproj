@@ -12,8 +12,13 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1863A517164C4F238BE2834C /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 60BBA1A6B51249319C94FDD1 /* Quicksand-SemiBold.ttf */; };
+		3B32F33074AC46058895D982 /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4510CC47B05F41B2B9B97EA1 /* Quicksand-Medium.ttf */; };
+		50BB3E9CE869471D81666785 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 080EF6B52A6842D2A2E9A202 /* Quicksand-Regular.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-newsAppLatest-newsAppLatestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-newsAppLatest-newsAppLatestTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C0D65A103CC7427F8A810482 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43AB910D2A3843138F804FF4 /* Quicksand-Bold.ttf */; };
+		D80EE3A382D546CE92A1CB80 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EFC8869C028645DCB612C90E /* Quicksand-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +35,7 @@
 		00E356EE1AD99517003FC87E /* newsAppLatestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = newsAppLatestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* newsAppLatestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = newsAppLatestTests.m; sourceTree = "<group>"; };
+		080EF6B52A6842D2A2E9A202 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* newsAppLatest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsAppLatest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = newsAppLatest/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = newsAppLatest/AppDelegate.mm; sourceTree = "<group>"; };
@@ -38,12 +44,16 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = newsAppLatest/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-newsAppLatest-newsAppLatestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newsAppLatest-newsAppLatestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-newsAppLatest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsAppLatest.debug.xcconfig"; path = "Target Support Files/Pods-newsAppLatest/Pods-newsAppLatest.debug.xcconfig"; sourceTree = "<group>"; };
+		43AB910D2A3843138F804FF4 /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		4510CC47B05F41B2B9B97EA1 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Medium.ttf"; path = "../assets/fonts/Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-newsAppLatest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsAppLatest.release.xcconfig"; path = "Target Support Files/Pods-newsAppLatest/Pods-newsAppLatest.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-newsAppLatest-newsAppLatestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsAppLatest-newsAppLatestTests.debug.xcconfig"; path = "Target Support Files/Pods-newsAppLatest-newsAppLatestTests/Pods-newsAppLatest-newsAppLatestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-newsAppLatest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newsAppLatest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BBA1A6B51249319C94FDD1 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-SemiBold.ttf"; path = "../assets/fonts/Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = newsAppLatest/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-newsAppLatest-newsAppLatestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsAppLatest-newsAppLatestTests.release.xcconfig"; path = "Target Support Files/Pods-newsAppLatest-newsAppLatestTests/Pods-newsAppLatest-newsAppLatestTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		EFC8869C028645DCB612C90E /* Quicksand-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				ECFD2A7F592F43809ACF1732 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -146,6 +157,18 @@
 				89C6BE57DB24E9ADA2F236DE /* Pods-newsAppLatest-newsAppLatestTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		ECFD2A7F592F43809ACF1732 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43AB910D2A3843138F804FF4 /* Quicksand-Bold.ttf */,
+				EFC8869C028645DCB612C90E /* Quicksand-Light.ttf */,
+				4510CC47B05F41B2B9B97EA1 /* Quicksand-Medium.ttf */,
+				080EF6B52A6842D2A2E9A202 /* Quicksand-Regular.ttf */,
+				60BBA1A6B51249319C94FDD1 /* Quicksand-SemiBold.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +267,11 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				C0D65A103CC7427F8A810482 /* Quicksand-Bold.ttf in Resources */,
+				D80EE3A382D546CE92A1CB80 /* Quicksand-Light.ttf in Resources */,
+				3B32F33074AC46058895D982 /* Quicksand-Medium.ttf in Resources */,
+				50BB3E9CE869471D81666785 /* Quicksand-Regular.ttf in Resources */,
+				1863A517164C4F238BE2834C /* Quicksand-SemiBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBH84RKL6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = newsAppLatest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -513,6 +542,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WBH84RKL6;
 				INFOPLIST_FILE = newsAppLatest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

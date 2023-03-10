@@ -1,33 +1,39 @@
-import {Image, View, StyleSheet, Text} from 'react-native';
+import {Image, View, StyleSheet, TouchableOpacity} from 'react-native';
+
 import StyledText from './StyledText';
+import {theme} from '../lib/theme';
+import CategoryTags from './CategoryTags';
+
 const Card = ({item}) => {
-  //console.log(item.volumeInfo.imageLinks.thumbnail);
   const bookData = item.volumeInfo;
   const imgURL = item.volumeInfo.imageLinks.thumbnail.replace('http', 'https');
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.cover}
-        source={{
-          uri: imgURL,
-        }}></Image>
+      <View style={styles.imgContainer}>
+        <Image
+          style={styles.cover}
+          source={{
+            uri: imgURL,
+          }}></Image>
+      </View>
       <View style={styles.bookInfoContainer}>
+        {bookData.categories && (
+          <CategoryTags categories={bookData.categories} />
+        )}
         <StyledText bold variant="title">
           {bookData.title}
         </StyledText>
-        <StyledText styles={{marginTop: 5}}>
-          <Text style={styles.prop}>Author:</Text>{' '}
+        <StyledText variant="subtitle" styles={{marginTop: 5}}>
           {bookData.authors.join(' , ')}
         </StyledText>
-        {bookData.categories && (
-          <StyledText>
-            <Text style={styles.prop}>Categories:</Text>{' '}
-            {bookData.categories.join(' , ')}
-          </StyledText>
-        )}
-        <StyledText>
-          <Text style={styles.prop}>Page Count:</Text> {bookData.pageCount}
-        </StyledText>
+
+        <TouchableOpacity activeOpacity={0.6} onPress={() => alert('Pressed!')}>
+          <View style={styles.button}>
+            <StyledText bold color={theme.white} styles={{textAlign: 'center'}}>
+              Select Book
+            </StyledText>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -38,22 +44,48 @@ export default Card;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    marginVertical: 10,
+    marginVertical: 5,
     marginHorizontal: 20,
-    backgroundColor: '#fff',
-    borderRadius: 10,
     padding: 10,
+  },
+  imgContainer: {
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
   },
   cover: {
     width: 80,
     height: 120,
     borderRadius: 5,
+    backgroundColor: '#000',
   },
   bookInfoContainer: {
     margin: 10,
     flex: 1,
+    height: '100%',
   },
   prop: {
     fontStyle: 'italic',
+  },
+  button: {
+    paddingVertical: 5,
+    paddingHorizontal: 15,
+    borderRadius: 10,
+    color: '#fff',
+    backgroundColor: theme.primary,
+    width: 100,
+    alignSelf: 'flex-start',
+    marginVertical: 12,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.15,
+    shadowRadius: 3.84,
   },
 });
