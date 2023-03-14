@@ -3,13 +3,12 @@ import StyledText from './StyledText';
 import {theme} from '../lib/theme';
 
 const CategoryTags = ({categories}) => {
-  console.log('__categories', categories);
   return (
     <FlatList
       data={categories}
       renderItem={({item}) => (
         <View style={styles.container}>
-          <StyledText bold color={theme.white} styles={{fontSize: 8}}>
+          <StyledText bold color={theme.white} styles={{fontSize: 10}}>
             {item}
           </StyledText>
         </View>
